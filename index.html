@@ -413,14 +413,15 @@
                     <h2 class="heading">Contact Me</h2>
                     <span>get in touch with me</span>
                 </div>
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
                     <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="hidden" name="access_key" value="bdd286c1-bef9-46f2-98c7-cd2e613a15d5">
+                        <input name="userFirstName" type="text" placeholder="First Name">
+                        <input name="userLastName" type="text" placeholder="Last Name">
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
+                    <input name="userEmail" type="email" placeholder="Email">
+                    <input name="subject" type="text" placeholder="Subject">
+                    <textarea name="userMessage" id="" cols="30" rows="10">
                     </textarea>
                     <div class="formBtn">
                         <button type="submit" class="btn">Send Message</button>
